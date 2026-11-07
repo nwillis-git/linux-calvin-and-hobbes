@@ -1,2 +1,2 @@
-# arch-rices
-A collection of my Arch Linux rices, to be easily accessed and swapped in and out.
+# Calvin and Hobbes Rice
+A Calvin and Hobbes-themed sway rice for linux. My first rice :D
