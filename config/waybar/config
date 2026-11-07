@@ -1,0 +1,72 @@
+{
+    "layer": "bot",
+    "spacing": 0,
+    "height": 0,
+    "width": 50,
+    "margin-right": 13,
+    "margin-top": 325,
+    "margin-bottom": 80,
+    "position": "right",
+
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock#hrs", "custom/applauncher", "clock#min"],
+    "modules-right": ["pulseaudio", "custom/audiosymbol"],
+
+
+    "custom/audiosymbol": {
+        "format": " ",
+        "tooltip": false
+    },
+    "custom/separator-horizontal": {
+        "format": "⬤",
+        "tooltip": false
+    },
+    "sway/workspaces": {
+        "all-outputs": false,
+        "tooltip": false
+    },
+    "custom/applauncher": {
+        "format": "⬤",
+        "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top_right --x=-15 --y=390",
+        "tooltip": false
+    },
+    "clock#hrs": {
+        "format": "{:%H}",
+        "tooltip": false
+    },
+    "clock#min": {
+        "format": "{:%M}",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "{volume}",
+        "format-bluetooth": "{volume}",
+        "format-icons": [
+            "a",
+            "b",
+            "c "
+        ],
+        "nospacing": 1,
+        "format-muted": " ",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+    "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄{capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": [
+      "󱊡",
+      "󱊢",
+      "󱊣"
+    ]
+  }
+}

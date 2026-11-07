@@ -1,0 +1,9 @@
+config/*
+!config/sway
+!config/waybar
+!config/wofi
+!config/kitty
+!config/fastfetch
+!config/wofi.bak
+!config/eww
+!config/spicetify

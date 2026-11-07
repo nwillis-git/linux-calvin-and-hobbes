@@ -1,0 +1,71 @@
+* {
+    border-radius: 14px;
+    color: #29c357;
+    font-family: Maple Mono;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: transparent;
+    border-radius: 14px;
+    border: 3px;
+    border-color: #ff8d13;
+    padding: 0px;
+    border-style: dotted;
+}
+
+#clock,
+#custom-applauncher,
+#workspaces,
+#pulseaudio {
+  border-radius: 8px;
+  color: #ff8d13;
+
+  border-style: none;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+#workspaces{
+    all: unset;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+#workspaces button {
+    all:unset;
+    background-color: transparent; /* Keep idle state clean */
+    background: transparent;
+    padding: 5px 5px 5px 5px;
+}
+
+#workspaces button:hover{
+    background-color: rgba(41, 195, 87, 0.1);
+    border-radius: 10px;
+}
+
+#pulseaudio{
+    all:unset;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+#custom-audiosymbol {
+    background-image: url("./images/volume.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 24px;
+    min-height: 24px;
+    margin-bottom: 12px;
+}
+
+#custom-separator-horizontal {
+    all:unset;
+    color:#ff8d13;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
